@@ -1,5 +1,0 @@
-com\demo\entity\Book.class
-com\demo\repository\BookRepository.class
-com\demo\config\ElasticSearchConfiguration.class
-com\demo\services\BookService.class
-com\demo\config\SpringDataElasticSearchDemoApplication.class
