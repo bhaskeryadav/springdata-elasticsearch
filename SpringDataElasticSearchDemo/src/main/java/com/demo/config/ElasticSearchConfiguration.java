@@ -16,7 +16,9 @@ public class ElasticSearchConfiguration {
 
 	@Bean
 	public Client client() {
-		Client client = new TransportClient().addTransportAddress(new InetSocketTransportAddress("127.0.0.1", 9300));
+		TransportClient client = new TransportClient();
+		TransportAddress address = new InetSocketTransportAddress("127.0.0.1", 9300);
+		client.addTransportAddress(address);
 		return client;
 	}
 
